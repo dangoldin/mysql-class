@@ -1,5 +1,5 @@
 MySQL Class
-========================================
+===========
 
 I'll be teaching a MySQL class for Coalition 4 Queens and am using this repo to collect my notes and assets. Feel free to follow along and let me know if you have any questions since I will most likely need to address them during the class.
 
