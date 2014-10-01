@@ -1,3 +1,4 @@
+-- Create the database
 create database stats;
 use database stats;
 
