@@ -1,6 +1,6 @@
 -- Create the database
 create database stats;
-use database stats;
+use stats;
 
 create table orig_stats (
   week int,

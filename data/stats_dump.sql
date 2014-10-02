@@ -17,7 +17,7 @@
 
 -- Database creation
 create database stats;
-use database stats;
+use stats;
 
 --
 -- Table structure for table `orig_stats`
