@@ -144,6 +144,13 @@ join positions pos on pos.id = p.position_id
 group by pos.id, pos.name
 order by avg_points desc;
 
+select p.team_id, t.name, sum(points) as total_points
+from stats s
+join players p on s.player_id = p.id
+join teams t on p.team_id = t.id
+group by p.team_id, t.name
+order by total_points desc;
+
 -- Interesting due to bye weeks
 select week, sum(points) as total_points
 from stats
@@ -154,3 +161,14 @@ select week, count(1) as num_matchups, 16 - count(1) as missing_matchups
 from schedule
 group by week
 order by week;
+
+-- Other interesting queries
+select t.name,
+  sum(case when pos.name = 'QB' then 1 else 0 end) as num_qbs,
+  sum(case when pos.name = 'RB' then 1 else 0 end) as num_rbs,
+  sum(case when pos.name = 'WR' then 1 else 0 end) as num_wrs,
+  sum(case when pos.name = 'TE' then 1 else 0 end) as num_tes
+from players p
+join teams t on p.team_id = t.id
+join positions pos on p.position_id = pos.id
+group by t.name;
