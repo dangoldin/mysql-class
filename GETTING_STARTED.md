@@ -19,7 +19,7 @@ Choose the Community Server for your Operating System.
 - Username should be "root"
 
 ### Load the data
-[https://github.com/dangoldin/mysql-class/tree/master/data](https://github.com/dangoldin/mysql-class/tree/master/data)
+[https://raw.githubusercontent.com/dangoldin/mysql-class/master/data/stats_dump.sql](https://raw.githubusercontent.com/dangoldin/mysql-class/master/data/stats_dump.sql)
 
 - Download the file called stats_dump.sql
 - Open and execute it using your MySQL client
