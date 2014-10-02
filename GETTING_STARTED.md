@@ -12,3 +12,10 @@ Choose the Community Server for your Operating System.
 
 #### OS X: Sequel Pro:
 [http://www.sequelpro.com/](http://www.sequelpro.com/)
+
+
+### Load the data
+[https://github.com/dangoldin/mysql-class/tree/master/data](https://github.com/dangoldin/mysql-class/tree/master/data)
+
+- Download the file called stats_dump.sql
+- Open and execute it using your MySQL client
