@@ -6,6 +6,11 @@ Exercises - Session II
 SELECT * FROM players WHERE name LIKE '%John%';
 ```
 
+### LIKE exercises
+
+- How many players have the last name Johnson?
+- How many players have the first name Ryan or Chris?
+
 ### GROUP BY examples
 
 ```sql
@@ -14,11 +19,6 @@ SELECT week, count(*) FROM schedule GROUP BY week;
 SELECT position_id, count(*) FROM players GROUP BY position_id;
 SELECT home_id, away_id, count(*) FROM schedule GROUP BY home_id, away_id;
 ```
-
-### LIKE exercises
-
-- How many players have the last name Johnson?
-- How many players have the first name Ryan or Chris?
 
 ### GROUP BY exercises
 
@@ -32,3 +32,6 @@ SELECT * FROM players JOIN positions ON players.position_id = positions.id;
 ```
 
 ### JOIN exercises
+
+- What player has the most projected rushing touchdowns in week 15?
+- What teams don't have a game week 11?
