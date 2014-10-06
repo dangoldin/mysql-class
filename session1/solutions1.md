@@ -1,6 +1,7 @@
 Solutions - Session I
 =====================
 
+{% highlight sql %}
 -- How many teams are in our dataset?
 select count(*) from teams;
 
@@ -36,3 +37,4 @@ select 90/(159+90+1);
 -- 90 is > 10
 -- 1 = 10
 
+{% endhighlight %}
