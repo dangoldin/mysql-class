@@ -2,18 +2,18 @@ Exercises - Session II
 ======================
 
 ### LIKE examples
-{% highlight sql %}
+```sql
 SELECT * FROM players WHERE name LIKE '%John%';
-{% endhighlight %}
+```
 
 ### GROUP BY examples
 
-{% highlight sql %}
+```sql
 SELECT player_id, sum(points) FROM stats GROUP BY player_id;
 SELECT week, count(*) FROM schedule GROUP BY week;
 SELECT position_id, count(*) FROM players GROUP BY position_id;
 SELECT home_id, away_id, count(*) FROM schedule GROUP BY home_id, away_id;
-{% endhighlight %}
+```
 
 ### LIKE exercises
 
@@ -25,11 +25,10 @@ SELECT home_id, away_id, count(*) FROM schedule GROUP BY home_id, away_id;
 - What week has the fewest number of games?
 - Which player have duplicate names?
 - What's the maximum points scored each week?
--
 
 ### JOIN examples
-{% highlight sql %}
+```sql
 SELECT * FROM players JOIN positions ON players.position_id = positions.id;
-{% endhighlight %}
+```
 
 ### JOIN exercises
