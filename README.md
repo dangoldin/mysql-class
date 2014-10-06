@@ -1,7 +1,7 @@
 MySQL Class
 ===========
 
-I'll be teaching a [http://www.c4q.nyc/introtomysql/](MySQL class for Coalition 4 Queens) and am using this repo to organize my notes and files. Feel free to follow along and let me know if you have any questions or suggestions.
+I'll be teaching a [MySQL class for Coalition 4 Queens](http://www.c4q.nyc/introtomysql/) and am using this repo to organize my notes and files. Feel free to follow along and let me know if you have any questions or suggestions.
 
 ## Session I
 
