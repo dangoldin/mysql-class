@@ -14,14 +14,14 @@ I'll be teaching a [MySQL class for Coalition 4 Queens](http://www.c4q.nyc/intro
 ## Session II
 
 - Refresh everyone's memory on the SELECT statement and do a few exercises
-- Introduce the LIKE clause
+- Introduce the IN and LIKE clauses
 - Introduce GROUP BY
 - Introduce table joins
 
 ## Session III
 
 - Introduce table sub selects
-- Go over the nuanced stuff we missed during the first two classes
+- Go over the random nuanced stuff we missed while speeding through the first two sessions
 - Talk about table design and indices
 
 ## Session IV
