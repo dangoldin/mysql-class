@@ -3,9 +3,9 @@ Exercises - Session II
 
 ### LIKE examples
 ```sql
-SELECT * FROM players WHERE name LIKE ‘%John%';
-SELECT * FROM players WHERE name LIKE ‘John%';
-SELECT * FROM players WHERE name LIKE ‘%John’;
+SELECT * FROM players WHERE name LIKE '%John%';
+SELECT * FROM players WHERE name LIKE 'John%';
+SELECT * FROM players WHERE name LIKE '%John';
 ```
 
 ### LIKE exercises
