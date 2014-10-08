@@ -44,11 +44,13 @@ SELECT home_id, away_id, count(*) FROM schedule GROUP BY home_id, away_id;
 ### JOIN examples
 ```sql
 SELECT * FROM players JOIN positions ON players.position_id = positions.id;
+SELECT players.name, positions.name FROM players JOIN positions ON players.position_id = positions.id;
 SELECT p.name, pos.name as position FROM players as p JOIN positions as pos ON p.position_id = pos.id;
+SELECT p.name, pos.name as position FROM players as p JOIN positions as pos ON p.position_id = pos.id WHERE pos.name in ('RB', 'WR') ORDER BY p.name;
 ```
 
 ### JOIN exercises
 
+- How many players do we have for each position?
 - What player has the most projected rushing touchdowns in week 15?
-- What teams don't have a game week 11?
--
+- What teams don't have a game in week 11?
