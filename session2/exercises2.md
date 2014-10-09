@@ -33,13 +33,15 @@ SELECT player_id, sum(points) FROM stats GROUP BY player_id;
 SELECT week, count(*) FROM schedule GROUP BY week;
 SELECT position_id, count(*) FROM players GROUP BY position_id;
 SELECT home_id, away_id, count(*) FROM schedule GROUP BY home_id, away_id;
+SELECT player_id, sum(points) FROM stats GROUP BY player_id HAVING sum(points) > 250;
 ```
 
 ### GROUP BY exercises
 
 - What week has the fewest number of games?
-- Which player have duplicate names?
-- What's the maximum points scored each week?
+- Which players have duplicate names?
+- What's the maximum and minimum projected points scored each week?
+- For how many players do we have less than 5 weeks projected stats for?
 
 ### JOIN examples
 ```sql
@@ -54,3 +56,6 @@ SELECT p.name, pos.name as position FROM players as p JOIN positions as pos ON p
 - How many players do we have for each position?
 - What player has the most projected rushing touchdowns in week 15?
 - What teams don't have a game in week 11?
+- How many players do we have for each position in week 12?
+- What's the total number of projected fantasy points by team?
+- What's the total number of projected fantasy points and projected rushing yards by team in week 10?
