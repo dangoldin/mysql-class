@@ -20,9 +20,10 @@ I'll be teaching a [MySQL class for Coalition 4 Queens](http://www.c4q.nyc/intro
 
 ## Session III
 
-- Introduce table sub selects
-- Go over the random nuanced stuff we missed while speeding through the first two sessions
-- Talk about table design and indices
+- Review GROUP BY and JOINs
+- Introduce subqueries
+  * Use subqueries in an IN clause
+  * Use subqueries in a JOIN
 
 ## Session IV
 
