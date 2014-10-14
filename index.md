@@ -11,7 +11,7 @@ Introduction to MySQL
 
 I'll be teaching a [MySQL class for Coalition 4 Queens](http://www.c4q.nyc/introtomysql/) and am using this repo to organize my notes and files. Feel free to follow along and let me know if you have any questions or suggestions.
 
-## [Session I](/session1)
+## [Session I]({{ site.baseurl }}/session1)
 
 - Overview of MySQL and relational databases. What are they? How are they used? What are the alternatives?
 - Provide a quick overview of the normal forms and what they mean. What impact does it have when they’re violated and go over what well designed databases have.
@@ -19,21 +19,21 @@ I'll be teaching a [MySQL class for Coalition 4 Queens](http://www.c4q.nyc/intro
 - Make sure everyone has MySQL installed or can get it installed.
 - Introduce the SELECT query and aggregate functions.
 
-## [Session II](/session2)
+## [Session II]({{ site.baseurl }}/session2)
 
 - Refresh everyone's memory on the SELECT statement and do a few exercises
 - Introduce the IN and LIKE clauses
 - Introduce GROUP BY
 - Introduce table joins
 
-## [Session III](/session3)
+## [Session III]({{ site.baseurl }}/session3)
 
 - Review GROUP BY and JOINs
 - Introduce subqueries
   * Use subqueries in an IN clause
   * Use subqueries in a JOIN
 
-## [Session IV](/session4)
+## [Session IV]({{ site.baseurl }}/session4)
 
 - Develop some complicated and slow queries and introduce the idea of INDICES so everyone is aware of why they are useful.
 - Go over table creation and have the students come up with some interesting aggregate tables.
