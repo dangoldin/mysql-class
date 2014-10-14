@@ -1,5 +1,13 @@
-MySQL Class
-===========
+---
+layout: default
+title: Introduction to MySQL
+tagline: Getting started with MySQL
+description: "Overview of the Introduction to MySQL Class"
+keywords: "mysql, databases"
+---
+
+Introduction to MySQL
+=====================
 
 I'll be teaching a [MySQL class for Coalition 4 Queens](http://www.c4q.nyc/introtomysql/) and am using this repo to organize my notes and files. Feel free to follow along and let me know if you have any questions or suggestions.
 
@@ -11,21 +19,21 @@ I'll be teaching a [MySQL class for Coalition 4 Queens](http://www.c4q.nyc/intro
 - Make sure everyone has MySQL installed or can get it installed.
 - Introduce the SELECT query and aggregate functions.
 
-## [Session I](/session2)
+## [Session II](/session2)
 
 - Refresh everyone's memory on the SELECT statement and do a few exercises
 - Introduce the IN and LIKE clauses
 - Introduce GROUP BY
 - Introduce table joins
 
-## [Session I](/session3)
+## [Session III](/session3)
 
 - Review GROUP BY and JOINs
 - Introduce subqueries
   * Use subqueries in an IN clause
   * Use subqueries in a JOIN
 
-## [Session I](/session4)
+## [Session IV](/session4)
 
 - Develop some complicated and slow queries and introduce the idea of INDICES so everyone is aware of why they are useful.
 - Go over table creation and have the students come up with some interesting aggregate tables.
