@@ -6,7 +6,7 @@ permalink: /about/
 
 This site contains the notes for the [Introduction to MySQL](http://www.c4q.nyc/introtomysql/) class that was taught at [Coalation for Queens](http://www.c4q.nyc) in October 2014. It was taught by [Dan Goldin](http://dangoldin.com) with a ton of help from the following people:
 
-- Greg Gunderson
+- Greg Gundersen
 - Dan Vingo
 - Alex Samuel
 
