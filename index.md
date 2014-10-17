@@ -35,7 +35,7 @@ This is the series of notes prepared for the [MySQL class](http://www.c4q.nyc/in
 
 ### [Session III]({{ site.baseurl }}/session3)
 
-- Notes and Exercises [HTML]({{ site.baseurl }}/session3/), [PDF]({{ site.baseurl }}/session3/mysql-class-lecture3.pdf), [Solutions]({{ site.baseurl }}/session3/solutions3)
+- Notes and Exercises [HTML]({{ site.baseurl }}/session3/), [PDF]({{ site.baseurl }}/session3/mysql-class-lecture-3.pdf), [Solutions]({{ site.baseurl }}/session3/solutions3)
 - Review GROUP BY and JOINs statements.
 - Introduce subqueries
   * Using subqueries in an IN clause.
