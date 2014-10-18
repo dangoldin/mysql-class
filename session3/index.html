@@ -131,7 +131,7 @@ GROUP BY week;
 SELECT week,
   sum(rushing_tds) AS total_rushing_tds,
   max(rushing_tds) AS max_rushing_tds,
-  sum(receiving_tds) AS titak_receiving_tds,
+  sum(receiving_tds) AS total_receiving_tds,
   max(receiving_tds) AS max_receiving_tds
 FROM stats
 WHERE points > 0
