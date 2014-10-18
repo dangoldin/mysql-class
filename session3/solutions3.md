@@ -43,19 +43,20 @@ GROUP BY week;
 {% endhighlight %}
 
 - Now write queries to do the following
-  * Retrieve the number of total projected points by week for all weeks past 11.
-  {% highlight sql %}
-    SELECT week, SUM(points) AS total_points
-    FROM stats
-    WHERE week > 11
-    GROUP BY week;
-  {% endhighlight %}
-  * Retrieve the number of players in our dataset for each team (team_id).
-  {% highlight sql %}
-    SELECT team_id, COUNT(*) AS num_players
-    FROM players
-    GROUP BY team_id;
-  {% endhighlight %}
+{% highlight sql %}
+-- Retrieve the number of total projected points by week
+-- for all weeks past 11.
+SELECT week, SUM(points) AS total_points
+FROM stats
+WHERE week > 11
+GROUP BY week;
+
+-- Retrieve the number of players in our dataset for
+-- each team (team_id).
+SELECT team_id, COUNT(*) AS num_players
+FROM players
+GROUP BY team_id;
+{% endhighlight %}
 
 # JOIN exercises
 
