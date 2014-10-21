@@ -43,8 +43,8 @@ This is the series of notes prepared for the [MySQL class](http://www.c4q.nyc/in
 
 ### [Session IV]({{ site.baseurl }}/session4)
 
-- Introduce table creation and modification
-- Introduce INSERT and UPDATE statements
-- Discuss INDICES and how they're used to improve performance.
-- Go over table creation and have the students come up with some interesting aggregate tables.
-- Provide tips and tricks when working with MySQL
+- Notes and Exercises [(HTML)]({{ site.baseurl }}/session4/) [(PDF)]({{ site.baseurl }}/session3/mysql-class-lecture-4.pdf), [Solutions]({{ site.baseurl }}/session4/solutions4)
+- Inserting data
+- Deleting data
+- Modifying tables
+- Creating tables
