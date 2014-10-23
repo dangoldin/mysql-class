@@ -61,6 +61,12 @@ class: center, middle
 
 ---
 
+# Survey time
+
+- [https://c4qnyc.wufoo.com/forms/sql-workshop-survey/](https://c4qnyc.wufoo.com/forms/sql-workshop-survey/)
+
+---
+
 # Quick review
 
 - What does this query do?
@@ -130,6 +136,7 @@ UPDATE schedule SET week = 18
 - Insert new rows into a table
 - INSERT INTO [table] VALUES ([values]);
 - INSERT INTO [table] ([fields]) VALUES ([values]);
+- INSERT INTO [table] ([fields]) VALUES ([values]),([values]);
 
 ---
 
@@ -142,6 +149,10 @@ INSERT INTO positions (name) VALUES ('K');
 
 INSERT INTO players (name, position_id, team_id)
   VALUES ('Dan Goldin', 1, 22);
+
+INSERT INTO players (name, position_id, team_id)
+  VALUES ('Dan Goldin', 1, 22),
+  ('Someone Else', 2, 10);
 ```
 
 ---
