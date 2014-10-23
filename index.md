@@ -43,7 +43,7 @@ This is the series of notes prepared for the [MySQL class](http://www.c4q.nyc/in
 
 ### [Session IV]({{ site.baseurl }}/session4)
 
-- Notes and Exercises [(HTML)]({{ site.baseurl }}/session4/) [(PDF)]({{ site.baseurl }}/session3/mysql-class-lecture-4.pdf), [Solutions]({{ site.baseurl }}/session4/solutions4)
+- Notes and Exercises [(HTML)]({{ site.baseurl }}/session4/) [(PDF)]({{ site.baseurl }}/session4/mysql-class-lecture-4.pdf), [Solutions]({{ site.baseurl }}/session4/solutions4)
 - Inserting data
 - Deleting data
 - Modifying tables
