@@ -57,6 +57,7 @@ class: center, middle
 - Deleting data
 - Modifying tables
 - Creating tables
+- Dropping tables
 
 ---
 
@@ -109,6 +110,9 @@ UPDATE players SET name = 'Dan Goldin'
 
 UPDATE players SET name = 'Dan Goldin',
   team_id = 2 WHERE id = 11;
+
+UPDATE schedule SET week = 18
+  WHERE week > 10 AND week < 11;
 ```
 
 ---
@@ -117,7 +121,7 @@ UPDATE players SET name = 'Dan Goldin',
 
 - Write queries to do the following:
   * Put everyone with the last name Johnson on team_id 10
-  * Give Eli Manning his birth name: "Elisha Nelson Manning"
+  * Update Eli Manning's record to use his birth name: "Elisha Nelson Manning"
 
 ---
 
@@ -147,18 +151,113 @@ INSERT INTO players (name, position_id, team_id)
 - Write queries to do the following:
   * Create a new NFL team
   * Add a week 18 game to the schedule
+  * Add a played named after you to the players table
 
 ---
 
 # Deleting data
 
+- Delete row(s) from a table
+- DELETE FROM [table] WHERE [condition];
+
+---
+
+# Deleting data
+
+```sql
+DELETE FROM positions WHERE name = 'QB';
+
+DELETE FROM schedule
+WHERE week IN (1,3,5,7);
+
+DELETE FROM schedule
+WHERE home_id IN (
+  SELECT id FROM teams
+  WHERE name in ('Ari', 'Atl')
+);
+```
+
+---
+
+# Exercises
+
+- Write queries to do the following:
+  * Delete the player you created
+  * Delete all players with the first name 'Ryan'
+  * Delete all players that average less than 10 points a week
+
 ---
 
 # Modifying tables
 
+- Modify the columns in a table
+- ALTER [table] ADD COLUMN [column_name] [column_definition];
+- ALTER [table] MODIFY [column_name] [new_column_definition];
+- ALTER [table] DROP COLUMN [column_name];
+
+---
+
+# Modifying tables
+
+```sql
+ALTER TABLE teams ADD COLUMN
+  long_name VARCHAR(20);
+
+ALTER TABLE teams MODIFY
+  long_name VARCHAR(40);
+
+ALTER TABLE teams DROP COLUMN
+  long_name;
+```
+
+---
+
+# Exercises
+
+- Add a first name and a last name column to the players table
+- Add a price_per_ticket column to the schedule table
+
 ---
 
 # Creating tables
+
+- Create new tables
+- CREATE TABLE [table] AS (fields);
+
+---
+
+# Creating tables
+
+```sql
+CREATE TABLE stadiums (
+  id int(10) unsigned NOT NULL AUTO_INCREMENT,
+  team_id int(10) unsigned NOT NULL,
+  name varchar(100) NOT NULL
+);
+```
+
+---
+
+# Exercises
+
+- Think of a useful or interesting table and add it to the database.
+
+---
+
+# Dropping tables
+
+- Remove a table from our database
+- DROP TABLE [table];
+
+---
+
+# Dropping tables
+
+```sql
+DROP TABLE positions;
+
+DROP TABLE stadiums;
+```
 
     </textarea>
     <script src="http://gnab.github.io/remark/downloads/remark-latest.min.js" type="text/javascript">
