@@ -60,7 +60,10 @@ SELECT week, min(points), max(points) FROM stats GROUP BY week;
 SELECT week, min(points), max(points) FROM stats WHERE points > 0 GROUP BY week;
 
 -- For how many players do we have less than 5 weeks projected stats for?
-SELECT name, count(*) AS count FROM players GROUP BY name HAVING count < 5;
+SELECT player_id, count(*) AS count
+FROM stats
+GROUP BY player_id
+HAVING count < 5;
 {% endhighlight %}
 
 ### JOIN exercises
