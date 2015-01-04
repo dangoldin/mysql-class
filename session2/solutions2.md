@@ -35,7 +35,15 @@ SELECT sum(points) FROM stats WHERE week IN (1,3)
 -- What's the total number of projected touchdown passes thrown in weeks 11 thru 17 by players with the last name Manning?
 -- First find players named Manning and then get the points for these two players (Eli and Peyton)
 SELECT * FROM players WHERE name LIKE '% Manning';
-SELECT sum(passing_tds) FROM stats WHERE player_id IN (11,25);
+SELECT sum(passing_tds) FROM stats
+  WHERE player_id IN (11,25)
+  AND week >= 11 AND week <= 17;
+-- Another way which we haven't covered yet using a sub query:
+SELECT sum(passing_tds) FROM stats
+  WHERE week >= 11 AND week <= 17
+  AND player_id IN (
+    SELECT id FROM players WHERE name LIKE '% Manning'
+  );
 {% endhighlight %}
 
 ### GROUP BY exercises
