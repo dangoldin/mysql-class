@@ -36,7 +36,7 @@ INSERT INTO players (name) VALUES ('Dan Goldin');
 DELETE FROM players WHERE name = 'Dan Goldin';
 
 -- Delete all players with the first name 'Ryan'
-DELETE FROM players WHERE name LIKE '%Ryan ';
+DELETE FROM players WHERE name LIKE 'Ryan %';
 
 -- Delete all players that average less than 10 points a week
 DELETE FROM players
@@ -56,10 +56,11 @@ ALTER TABLE schedule ADD COLUMN price_per_ticket float;
 
 -- Think of a useful or interesting table and
 -- add it to the database.
-CREATE TABLE stadiums (
+CREATE TABLE `stadiums` (
   id int(10) unsigned NOT NULL AUTO_INCREMENT,
   team_id int(10) unsigned NOT NULL,
-  name varchar(100) NOT NULL
+  name varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
 );
 
 {% endhighlight %}
