@@ -48,3 +48,6 @@ This is the series of notes prepared for the [MySQL class](http://www.c4q.nyc/in
 - Deleting data
 - Modifying tables
 - Creating tables
+
+### [Additional Problems]({{ site.baseurl }}/additional_problems)
+- [Exercises]({{ site.baseurl }}/additional_problems)
