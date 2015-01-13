@@ -15,7 +15,7 @@ This is the series of notes prepared for the [MySQL class](http://www.c4q.nyc/in
 
 - A quick guide on how to install MySQL and a MySQL client to make querying easy
 
-### [Session I]({{ site.baseurl }}/session1)
+### [Session I]({{ site.baseurl }}/session1/mysql-class-lecture-1.pdf)
 
 - [Notes]({{ site.baseurl }}/session1/mysql-class-lecture-1.pdf), [Exercises]({{ site.baseurl }}/session1/exercises1), [Solutions]({{ site.baseurl }}/session1/solutions1)
 - Overview of MySQL and relational databases. What are they? How are they used? What are the alternatives?
@@ -25,7 +25,7 @@ This is the series of notes prepared for the [MySQL class](http://www.c4q.nyc/in
 - Introduce the SELECT query.
 - Introduce simple aggregate functions.
 
-### [Session II]({{ site.baseurl }}/session2)
+### [Session II]({{ site.baseurl }}/session2/mysql-class-lecture-2.pdf)
 
 - [Notes]({{ site.baseurl }}/session2/mysql-class-lecture-2.pdf), [Exercises]({{ site.baseurl }}/session2/exercises2), [Solutions]({{ site.baseurl }}/session2/solutions2)
 - Review the SELECT statement and do a few simple exercises.
